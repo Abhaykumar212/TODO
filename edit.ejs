@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit File</title>
+    <link rel="shortcut icon" type="x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvT_KWjUBGL5xMaNmtr_xU-smdIFTywLpRg&s">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-800">
+    <form action="/edit/<%= fileName %>" method="post" class="bg-pink-800 p-4 m-11 rounded-lg">
+        <textarea name="content" rows="10" class="w-full p-2 rounded-lg bg-zinc-700 text-white outline-none"><%= data %></textarea>
+        <button type="submit" class="bg-blue-700 text-white p-2 mt-4 rounded-lg">Save Changes</button>
+    </form>
+
+    <div>
+        <a href="/" class="text-blue-400 ml-11 bg-green-900 rounded-lg p-2">Go back to home</a>
+    </div>
+</body>
+</html>
